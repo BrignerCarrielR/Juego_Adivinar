@@ -1,0 +1,29 @@
+.primario {
+    background-color: #001a33;
+    color: white;
+}
+
+/* espacio debajo del navegador */
+.secundario {
+    background-color: #004280;
+    color: white;
+}
+
+.terciario {
+    background-color: #99ceff;
+}
+
+
+.imgfondo {
+    background: url(https://wallpaperaccess.com/full/5234773.jpg);
+    background-size: cover;
+}
+
+.colorborde {
+    border: solid;
+    border-color: #99ceff;
+}
+
+.oculto {
+    display: none;
+}

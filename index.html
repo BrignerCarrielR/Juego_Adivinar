@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg primario">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Adivina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="https://brignercarrielr.github.io/PortafolioWed/">Portafolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="terciario" style="height: 10px;"></div>
+    <div class="secundario">
+        <div class="container p-4">
+            <center>
+                <div class="card terciario shadow-lg p-3 mb-5 rounded" style="width: 18rem;">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">
+                                    <h5 class="card-title">Ingresa tu Nombre</h5>
+                                </label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre...">
+                            </div>
+                            <button type="button" class="btn primario btn-outline-light" id="jugar">JUGAR</button>
+                        </form>
+                        <br>
+                        <div class="alert alert-warning oculto" role="alert" id="validarNombre">
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <div class="card container terciario oculto" id="juego">
+            <div class="card-header">
+                Hola Bienvenido <strong id="saludo"></strong>.
+            </div>
+            <div>
+                <h2 class="text-center p-5 fw-bold">Adivina el Numero</h2>
+                <div class="row p-4 text-center">
+                    <div class="alert alert-warning oculto" role="alert" id="resultado">
+                    </div>
+                    <div class="col-sm-3 p-3">
+                        <div class="card">
+                            <div class="card-body carta text-white">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">
+                                            <h5 class="card-title text-black">Ingresa un Numero</h5>
+                                        </label>
+                                        <input type="number" class="form-control" id="numero"
+                                            placeholder="Numero del 1 al 20..." min="1" max="20">
+                                    </div>
+                                    <center>
+                                        <button type="button" class="btn primario btn-outline-warning"
+                                            onclick="adivina_numero();" id="Adivinar">Adivinar</button>
+                                    </center>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-3">
+                        <div class="container">
+                            <button class="btn btn-light col-2 m-2" id="1">1</button>
+                            <button class="btn btn-light col-2 m-2" id="2">2</button>
+                            <button class="btn btn-light col-2 m-2" id="3">3</button>
+                            <button class="btn btn-light col-2 m-2" id="4">4</button>
+                            <button class="btn btn-light col-2 m-2" id="5">5</button>
+                            <button class="btn btn-light col-2 m-2" id="6">6</button>
+                            <button class="btn btn-light col-2 m-2" id="7">7</button>
+                            <button class="btn btn-light col-2 m-2" id="8">8</button>
+                            <button class="btn btn-light col-2 m-2" id="9">9</button>
+                            <button class="btn btn-light col-2 m-2" id="10">10</button>
+                            <button class="btn btn-light col-2 m-2" id="11">11</button>
+                            <button class="btn btn-light col-2 m-2" id="12">12</button>
+                            <button class="btn btn-light col-2 m-2" id="13">13</button>
+                            <button class="btn btn-light col-2 m-2" id="14">14</button>
+                            <button class="btn btn-light col-2 m-2" id="15">15</button>
+                            <button class="btn btn-light col-2 m-2" id="16">16</button>
+                            <button class="btn btn-light col-2 m-2" id="17">17</button>
+                            <button class="btn btn-light col-2 m-2" id="18">18</button>
+                            <button class="btn btn-light col-2 m-2" id="19">19</button>
+                            <button class="btn btn-light col-2 m-2" id="20">20</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <script src="js/proceso.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
